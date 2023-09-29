@@ -23,7 +23,7 @@ typedef struct node node_t;
  * list. */
 struct list {
 	node_t *head;
-  node_t *tail;
+  	node_t *tail;
 };
 
 typedef struct list list_t;
