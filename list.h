@@ -15,7 +15,7 @@ typedef int elem;
  * next pointer. */
 struct node {
 	elem val;
-	struct node *next;
+	struct node *nxt;
 };
 typedef struct node node_t;
 
@@ -23,13 +23,16 @@ typedef struct node node_t;
  * list. */
 struct list {
 	node_t *head;
+  node_t *tail;
 };
+
 typedef struct list list_t;
 
 /* Functions for allocating and freeing lists. By using only these functions,
  * the user should be able to allocate and free all the memory required for
  * this linked list library. */
 list_t *list_alloc();
+
 void list_free(list_t *lh);
 
 /* Prints the list in some format. */
