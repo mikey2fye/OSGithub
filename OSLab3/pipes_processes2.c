@@ -7,7 +7,7 @@
 /**
  * Executes the command "cat scores | grep Lakers".  In this quick-and-dirty
  * implementation the parent doesn't wait for the child to finish and
- * so the command prompt may reappear before the child terminates.
+ * so the command prompt may reappear before the child terminates. 
  *
  */
 
